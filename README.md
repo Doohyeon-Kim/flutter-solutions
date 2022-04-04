@@ -25,7 +25,8 @@ flutter packages pub run build_runner build --delete-conflicting-outputs
 <br>
 
 ### Keyboard Error(Android)
-error message
+Error Message
+
 ```
 W/IInputConnectionWrapper(24997): beginBatchEdit on inactive InputConnection
 W/IInputConnectionWrapper(24997): getTextBeforeCursor on inactive InputConnection
@@ -50,6 +51,8 @@ check Navigator or context as argument.
 
 ### Podfile Error(iOS)
 
+Error Message
+
 Automatically assigning platform `iOS` with version `9.0` on target `Runner` because no platform was specified. Please specify a platform for this target in your Podfile.
 
 Solution.
@@ -67,3 +70,23 @@ to <br>
 
 3. Specify your target iOS bersion
 
+<br>
+
+### multidex error
+
+
+Error Message
+
+D8: Cannot fit requested classes in a single dex file (# methods: 70015 > 65536)
+ 
+Solution.
+ 
+Open and modify project/android/app/build.gradle file to enable multidex, as shown below.
+ 
+android {
+    defaultConfig {
+        ...
+        multiDexEnabled true
+    }
+    ...
+}
