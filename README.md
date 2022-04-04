@@ -56,5 +56,14 @@ Solution.
 
 1. Check which iOS versions are compatible with package what you are using.
 
-2. Specify your target iOS bersion
+2. Uncomment ```bash platform :ios ``` in ios/Podfile.
+
+from <br>
+![image](https://user-images.githubusercontent.com/92246475/161494530-79c6c2d8-c83c-4a87-8a17-1a3d07310235.png)
+
+to <br>
+![image](https://user-images.githubusercontent.com/92246475/161494551-458e1216-d3da-4531-aa50-ce85ca072739.png)
+
+
+3. Specify your target iOS bersion
 
