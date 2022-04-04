@@ -46,3 +46,15 @@ Solution 2.
 
 check Navigator or context as argument.
 
+<br>
+
+### Podfile Error(iOS)
+
+Automatically assigning platform `iOS` with version `9.0` on target `Runner` because no platform was specified. Please specify a platform for this target in your Podfile.
+
+Solution.
+
+1. Check which iOS versions are compatible with package what you are using.
+
+2. Specify your target iOS bersion
+
